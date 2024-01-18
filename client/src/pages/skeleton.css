@@ -1,0 +1,31 @@
+/* Add these styles to your existing styles or create a new stylesheet */
+
+.skeleton-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* margin-top: 51px; */
+}
+
+.skeleton-item {
+  width: 168px; /* Adjust the width to match your card width */
+  height: 307px; /* Adjust the height to match your card height */
+  margin-top: 21px;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  border-radius: 16px;
+  animation: shimmer 1.5s infinite linear;
+}
+
+@media (max-width: 640px) {
+  .skeleton-item {
+    margin: 21px auto 0 auto;
+    width: 300px;
+    height: 307px; /* Adjust the width to match your card width */
+  }
+}
+
+@keyframes shimmer {
+  to {
+    background-position: -200% 0;
+  }
+}
